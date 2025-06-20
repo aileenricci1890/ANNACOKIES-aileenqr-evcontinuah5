@@ -84,18 +84,22 @@
 </footer>
 
 <script>
-  window.onload = function () {
-    if (!localStorage.getItem("alertaMostrada")) {
+  document.addEventListener("DOMContentLoaded", function () {
+    const navType = performance.getEntriesByType("navigation")[0]?.type;
+
+    const vieneDeOtraPagina = sessionStorage.getItem("vieneDeOtraPagina");
+
+    if ((navType === "navigate" || navType === "reload") && !vieneDeOtraPagina) {
       document.getElementById("alertaModal").style.display = "block";
-      localStorage.setItem("alertaMostrada", "true");
     }
-  };
+
+    sessionStorage.removeItem("vieneDeOtraPagina");
+  });
 
   function cerrarAlerta() {
     document.getElementById("alertaModal").style.display = "none";
   }
 </script>
-
 
 </body>
 </html>
