@@ -42,6 +42,7 @@
         <img class="home__logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ44tBriujNAgLonbX-L5jZL461cosUig6cAQ&s" alt="Logo Galletas Anna">
     </a>
 </div>
+
         <nav class="home__nav">
             <ul class="home__menu">
                 <li class="home__menu-item"><a class="home__link" href="index.html">Inicio</a></li>
@@ -84,10 +85,9 @@
 
 <script>
   window.onload = function () {
-    const navigationType = performance.getEntriesByType("navigation")[0].type;
-
-    if (navigationType === "reload") {
+    if (!localStorage.getItem("alertaMostrada")) {
       document.getElementById("alertaModal").style.display = "block";
+      localStorage.setItem("alertaMostrada", "true");
     }
   };
 
@@ -95,6 +95,7 @@
     document.getElementById("alertaModal").style.display = "none";
   }
 </script>
+
 
 </body>
 </html>
