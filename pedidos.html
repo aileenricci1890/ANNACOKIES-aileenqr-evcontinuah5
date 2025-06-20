@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedidos - Galletas Anna</title>
+  <link rel="stylesheet" href="pedidos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  body {
+    font-family:'Quicksand', sans-serif;
+  }
+</style>
+
+</head>
+<body class="body">
+ <header class="header">
+  <a href="index.html">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ44tBriujNAgLonbX-L5jZL461cosUig6cAQ&s" alt="Logo Galletas Anna" class="header__logo">
+  </a>
+  <nav class="navbar">
+    <ul class="navbar__list">
+      <li class="navbar__item"><a href="index.html" class="navbar__link">Inicio</a></li>
+      <li class="navbar__item"><a href="menu.html" class="navbar__link">Menú</a></li>
+      <li class="navbar__item"><a href="nuestrahistoria.html" class="navbar__link">Nuestra Historia</a></li>
+      <li class="navbar__item"><a href="nosotros.html" class="navbar__link">Sobre Nosotros</a></li>
+      <li class="navbar__item"><a href="pedidos.html" class="navbar__link">Pedidos</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <main class="main">
+    <h1 class="main__title">🍪 Realiza tu Pedido</h1>
+
+    <section class="producto">
+      <img src="https://i.pinimg.com/736x/be/17/1c/be171cc984479e691cfcbde8948e9371.jpg" alt="Cookie Clásica" class="producto__imagen">
+      <div class="producto__info">
+        <h2 class="producto__nombre">Cookie Clásica</h2>
+        <p class="producto__descripcion">Galleta suave rellena de chocolate derretido. ¡Nuestra favorita de siempre!</p>
+        <div class="producto__contador">
+          <button class="producto__btn-decrementar">-</button>
+           <span class="producto__cantidad">0u</span>
+          <button class="producto__btn-incrementar">+</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="producto">
+      <img src="https://i.pinimg.com/236x/27/c0/94/27c094ac1251219fa80da15a414118c5.jpg" alt="Cookie Frambuesa" class="producto__imagen">
+      <div class="producto__info">
+        <h2 class="producto__nombre">Cookie Frambuesa</h2>
+        <p class="producto__descripcion">Deliciosa mezcla de frambuesa y chocolate blanco en una galleta esponjosa.</p>
+        <div class="producto__contador">
+          <button class="producto__btn-decrementar">-</button>
+          <span class="producto__cantidad">0u</span>
+          <button class="producto__btn-incrementar">+</button>
+        </div>
+      </div>
+    </section>
+    <section class="producto">
+      <img src="https://i.pinimg.com/736x/01/b4/3a/01b43ace821321d174809ab3443528df.jpg" alt="Cookie Frambuesa" class="producto__imagen">
+      <div class="producto__info">
+        <h2 class="producto__nombre">Cookie doble chocolate</h2>
+        <p class="producto__descripcion">Deliciosa mezcla de chocolate negro y blanco rellena de mouse de chocolate en una galleta esponjosa.</p>
+        <div class="producto__contador">
+          <button class="producto__btn-decrementar">-</button>
+          <span class="producto__cantidad">0u</span>
+          <button class="producto__btn-incrementar">+</button>
+        </div>
+      </div>
+    </section>
+    <section class="producto">
+      <img src="https://i.pinimg.com/736x/7d/e0/15/7de01595dc8017d53ec83d75859bd1ac.jpg" alt="Cookie Frambuesa" class="producto__imagen">
+      <div class="producto__info">
+        <h2 class="producto__nombre">Cookie crema de maní</h2>
+        <p class="producto__descripcion">Deliciosa mezcla de chocolate blanco y vainilla rellena de crema de maní en una galleta esponjosa.</p>
+        <div class="producto__contador">
+          <button class="producto__btn-decrementar">-</button>
+          <span class="producto__cantidad">0u</span>
+          <button class="producto__btn-incrementar">+</button>
+        </div>
+      </div>
+    </section>
+    <section class="producto">
+      <img src="https://i.pinimg.com/736x/3c/89/e9/3c89e945c476efbc0148c96b0c258bf1.jpg" alt="Cookie Frambuesa" class="producto__imagen">
+      <div class="producto__info">
+        <h2 class="producto__nombre">Cookie de coco</h2>
+        <p class="producto__descripcion">Deliciosa mezcla vainilla con relleno de brigadeiro de coco en una galleta esponjosa.</p>
+        <div class="producto__contador">
+          <button class="producto__btn-decrementar">-</button>
+          <span class="producto__cantidad">0u</span>
+          <button class="producto__btn-incrementar">+</button>
+        </div>
+      </div>
+    </section>
+    <section class="producto">
+      <img src="https://i.pinimg.com/736x/fe/52/48/fe524861cdf65d3479a22f6efbc5bfb0.jpg" alt="Cookie Frambuesa" class="producto__imagen">
+      <div class="producto__info">
+        <h2 class="producto__nombre">Cookie de pistacho</h2>
+        <p class="producto__descripcion">Deliciosa mezcla chocolate blanco y vainilla con relleno de crema de pistacho en una galleta esponjosa.</p>
+        <div class="producto__contador">
+          <button class="producto__btn-decrementar">-</button>
+          <span class="producto__cantidad">0u</span>
+          <button class="producto__btn-incrementar">+</button>
+        </div>
+      </div>
+    </section>
+    <section class="producto">
+      <img src="https://i.pinimg.com/736x/01/c2/e2/01c2e231f6b311856b30977f3b7bf6f1.jpg" alt="Cookie Frambuesa" class="producto__imagen">
+      <div class="producto__info">
+        <h2 class="producto__nombre">Cookie clásicanutt</h2>
+        <p class="producto__descripcion">Deliciosa mezcla galleta clásica rellena de mucha nutella en una galleta esponjosa.</p>
+        <div class="producto__contador">
+          <button class="producto__btn-decrementar">-</button>
+          <span class="producto__cantidad">0u</span>
+          <button class="producto__btn-incrementar">+</button>
+        </div>
+      </div>
+    </section>
+    <section class="producto">
+      <img src="https://i.pinimg.com/736x/67/2c/20/672c208c8319d9c72cb7226b17922a3f.jpg" alt="Cookie Frambuesa" class="producto__imagen">
+      <div class="producto__info">
+        <h2 class="producto__nombre">Cookie chocomaracuya</h2>
+        <p class="producto__descripcion">Deliciosa mezcla cookie de chocolate cubierta de mouse de maracuyá y chocolate derretido en una galleta esponjosa.</p>
+        <div class="producto__contador">
+          <button class="producto__btn-decrementar">-</button>
+          <span class="producto__cantidad">0u</span>
+          <button class="producto__btn-incrementar">+</button>
+        </div>
+      </div>
+    </section>
+    <section class="producto">
+      <img src="https://i.pinimg.com/736x/ee/c5/78/eec578383cc3d767702470fe0f429635.jpg" alt="Cookie Frambuesa" class="producto__imagen">
+      <div class="producto__info">
+        <h2 class="producto__nombre">Cookie clásica red velvet</h2>
+        <p class="producto__descripcion">Deliciosa mezcla de masa red velvet con chispas de chocolate blanco en una galleta esponjosa.</p>
+        <div class="producto__contador">
+          <button class="producto__btn-decrementar">-</button>
+          <span class="producto__cantidad">0u</span>
+          <button class="producto__btn-incrementar">+</button>
+        </div>
+      </div>
+    </section>
+     <section class="producto">
+      <img src="https://i.pinimg.com/736x/cf/a4/3a/cfa43aeff59ef51c1238435c51b3d271.jpg" alt="Cookie Frambuesa" class="producto__imagen">
+      <div class="producto__info">
+        <h2 class="producto__nombre">Cookie Manjar</h2>
+        <p class="producto__descripcion">Deliciosa mezcla de galleta clasica rellena y bañada de manjar blanco en una galleta esponjosa.</p>
+        <div class="producto__contador">
+          <button class="producto__btn-decrementar">-</button>
+          <span class="producto__cantidad">0u</span>
+          <button class="producto__btn-incrementar">+</button>
+        </div>
+      </div>
+    </section>
+    <section class="producto">
+      <img src="https://i.pinimg.com/736x/30/ee/15/30ee154ce6ff9a820e3801ce4d6209a6.jpg" alt="Cookie Frambuesa" class="producto__imagen">
+      <div class="producto__info">
+        <h2 class="producto__nombre">Strawberry Matcha</h2>
+        <p class="producto__descripcion">Deliciosa bebida a base de leche y matcha junto con fresas aplastadas hechas crema.</p>
+        <div class="producto__contador">
+          <button class="producto__btn-decrementar">-</button>
+          <span class="producto__cantidad">0u</span>
+          <button class="producto__btn-incrementar">+</button>
+        </div>
+      </div>
+    </section>
+    <section class="producto">
+      <img src="https://i.pinimg.com/736x/3b/a6/67/3ba66790dd6c2c6612e48e118581faee.jpg" alt="Cookie Frambuesa" class="producto__imagen">
+      <div class="producto__info">
+        <h2 class="producto__nombre">Mango Matcha</h2>
+        <p class="producto__descripcion">Deliciosa bebida a base de leche fria con matcha y trocitos de mango para darle un toque especial.</p>
+        <div class="producto__contador">
+          <button class="producto__btn-decrementar">-</button>
+          <span class="producto__cantidad">0u</span>
+          <button class="producto__btn-incrementar">+</button>
+        </div>
+      </div>
+    </section>
+    <section class="producto">
+      <img src="https://i.pinimg.com/736x/6e/e6/e3/6ee6e32a39e4b66dc94d68c8ceb8bf1c.jpg" alt="Cookie Frambuesa" class="producto__imagen">
+      <div class="producto__info">
+        <h2 class="producto__nombre">Grape Kiwi</h2>
+        <p class="producto__descripcion">Deliciosa bebida con unfusión de uva y crema de kiwi.</p>
+        <div class="producto__contador">
+          <button class="producto__btn-decrementar">-</button>
+          <span class="producto__cantidad">0u</span>
+          <button class="producto__btn-incrementar">+</button>
+        </div>
+      </div>
+    </section>
+    <section class="producto">
+      <img src="https://i.pinimg.com/736x/2c/73/f0/2c73f00f66845f127d98e688ba9c6901.jpg" alt="Cookie Frambuesa" class="producto__imagen">
+      <div class="producto__info">
+        <h2 class="producto__nombre">Watermelon Kiwi</h2>
+        <p class="producto__descripcion">Deliciosa bebida con sandía aplastada y jugo espumoso de kiwi.</p>
+        <div class="producto__contador">
+          <button class="producto__btn-decrementar">-</button>
+          <span class="producto__cantidad">0u</span>
+          <button class="producto__btn-incrementar">+</button>
+        </div>
+      </div>
+    </section>
+    <section class="producto">
+      <img src="https://i.pinimg.com/736x/73/df/78/73df785df4007338d2fad3f9e287d299.jpg" alt="Cookie Frambuesa" class="producto__imagen">
+      <div class="producto__info">
+        <h2 class="producto__nombre">Clasic Ice Coffee </h2>
+        <p class="producto__descripcion">Deliciosa bebida mezcla de leche con café clásico con mucho hielo.</p>
+        <div class="producto__contador">
+          <button class="producto__btn-decrementar">-</button>
+          <span class="producto__cantidad">0u</span>
+          <button class="producto__btn-incrementar">+</button>
+        </div>
+      </div>
+    </section>
+<div class="confirmar">
+  <button id="confirmarPedidoBtn" class="confirmar__boton">Confirmar Pedido</button>
+</div>
+
+
+    <div class="metodos">
+      <h3 class="metodos__titulo">Elige tu método de entrega</h3>
+      <div class="metodos__iconos">
+        <div class="metodos__opcion">
+          <img src="https://cdn-icons-png.flaticon.com/512/1231/1231891.png" alt="Delivery" class="metodos__imagen">
+          <p class="metodos__texto">Delivery</p>
+        </div>
+        <div class="metodos__opcion">
+          <img src="https://cdn-icons-png.flaticon.com/512/891/891462.png" alt="Recojo en tienda" class="metodos__imagen">
+          <p class="metodos__texto">Recojo en tienda</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="whatsapp">
+      <a href="https://wa.me/59161688955" target="_blank" class="whatsapp__link">Finalizar Pedido por WhatsApp 💬</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__texto">&copy; 2025 Galletas Anna - Todos los derechos reservados.</p>
+  </footer>
+
+<div id="modalResumen" class="modal">
+  <div class="modal__contenido">
+    <h3>Resumen de tu Pedido</h3>
+    <pre id="resumenPedido"></pre>
+    <div class="modal__botones">
+      <button class="modal__btn modal__btn--cancelar" id="cancelarPedido">Cancelar</button>
+      <button class="modal__btn modal__btn--confirmar" id="confirmarPedido">Confirmar</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Personalizado -->
+<div id="modalResumen" class="modal">
+  <div class="modal__contenido">
+    <h3>Resumen de tu Pedido</h3>
+    <pre id="resumenPedido"></pre>
+    <div class="modal__botones">
+      <button class="modal__btn modal__btn--cancelar" id="cancelarPedido">Cancelar</button>
+      <button class="modal__btn modal__btn--confirmar" id="confirmarPedido">Confirmar</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const productos = document.querySelectorAll(".producto");
+
+    productos.forEach((producto) => {
+      const btnMas = producto.querySelector(".producto__btn-incrementar");
+      const btnMenos = producto.querySelector(".producto__btn-decrementar");
+      const cantidadSpan = producto.querySelector(".producto__cantidad");
+
+      btnMas.addEventListener("click", () => {
+        let cantidad = parseInt(cantidadSpan.textContent.replace("u", ""));
+        cantidad++;
+        cantidadSpan.textContent = cantidad + "u";
+      });
+
+      btnMenos.addEventListener("click", () => {
+        let cantidad = parseInt(cantidadSpan.textContent.replace("u", ""));
+        if (cantidad > 0) {
+          cantidad--;
+          cantidadSpan.textContent = cantidad + "u";
+        }
+      });
+    });
+
+    const btnConfirmar = document.getElementById("confirmarPedidoBtn");
+    const modal = document.getElementById("modalResumen");
+    const resumenPedido = document.getElementById("resumenPedido");
+    const cancelarBtn = document.getElementById("cancelarPedido");
+    const confirmarBtn = document.getElementById("confirmarPedido");
+
+    btnConfirmar.addEventListener("click", () => {
+      let resumen = "";
+      productos.forEach((producto) => {
+        const nombre = producto.querySelector(".producto__nombre").textContent;
+        const cantidad = parseInt(producto.querySelector(".producto__cantidad").textContent.replace("u", ""));
+        if (cantidad > 0) {
+          resumen += `🍪 ${nombre}: ${cantidad} unidades\n`;
+        }
+      });
+
+      if (resumen === "") {
+        alert("Por favor, selecciona al menos una galleta 🍪.");
+      } else {
+        resumenPedido.textContent = resumen;
+        modal.style.display = "flex";
+      }
+    });
+
+    cancelarBtn.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+
+    confirmarBtn.addEventListener("click", () => {
+      modal.style.display = "none";
+      document.querySelector(".metodos").scrollIntoView({ behavior: "smooth" });
+    });
+  });
+</script>
+
+</body>
+</html>

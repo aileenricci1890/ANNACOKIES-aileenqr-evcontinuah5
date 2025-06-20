@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf4fa;
+    color: #4a4a4a;
+}
+
+.home__header {
+    background-color: #f5c8e7;
+    padding: 1rem;
+    text-align: center;
+    position:sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.home__logo-container {
+    margin-bottom: 1rem;
+}
+
+.home__logo {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.home__nav {
+    margin-top: 1rem;
+}
+
+.home__menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0;
+}
+.navbar__link {
+    text-decoration: none;
+    color: #5a2d82;
+    font-weight: bold;
+    background-color: #fddde6;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar__link:hover {
+    background-color: #fbb1d9;
+}
+.home__link {
+    text-decoration: none;
+    color: #6b2e76;
+    background-color: #ffe3f4;
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.home__link:hover {
+    background-color: #f0b4d8;
+    color: white;
+}
+
+.main {
+    padding: 30px;
+    text-align: center;
+}
+
+.main__title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.productos {
+    margin-bottom: 40px;
+}
+
+.productos__categoria {
+    font-size: 1.5em;
+    color: #b34fc6;
+    margin-bottom: 10px;
+}
+
+.productos__lista {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1em;
+}
+
+.productos__imagenes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.productos__imagen {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.footer {
+    background-color: #e5ccf5;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.footer__text {
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar__menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .navbar__item {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .navbar__link {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+}

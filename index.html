@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galletas Anna - Inicio</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  body {
+    font-family:'Quicksand', sans-serif;
+  }
+</style>
+
+</head>
+<div id="alertaModal" class="alerta-modal">
+  <div class="alerta-contenido">
+    <span class="alerta-cerrar" onclick="cerrarAlerta()">&times;</span>
+    <h2 class="alerta-titulo">Alerta</h2>
+    <p class="alerta-mensaje">
+      Hola guap@! Por el momento, únicamente estamos aceptando reservas bajo la modalidad de pick up/recogida en el local. Estamos trabajando para habilitar los pedidos mediante la modalidad de delivery lo antes posible. Gracias por tu comprensión y apoyo &lt;3
+    </p>
+    <button class="alerta-boton" onclick="cerrarAlerta()">Aceptar</button>
+  </div>
+</div>
+
+<script>
+  window.onload = function () {
+    document.getElementById("alertaModal").style.display = "block";
+  };
+
+  function cerrarAlerta() {
+    document.getElementById("alertaModal").style.display = "none";
+  }
+</script>
+
+<body class="home">
+
+    <header class="home__header">
+       <div class="home__logo-container">
+    <a href="index.html">
+        <img class="home__logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ44tBriujNAgLonbX-L5jZL461cosUig6cAQ&s" alt="Logo Galletas Anna">
+    </a>
+</div>
+        <nav class="home__nav">
+            <ul class="home__menu">
+                <li class="home__menu-item"><a class="home__link" href="index.html">Inicio</a></li>
+                <li class="home__menu-item"><a class="home__link" href="menu.html">Menú</a></li>
+                <li class="home__menu-item"><a class="home__link" href="nuestrahistoria.html">Nuestra Historia</a></li>
+                <li class="home__menu-item"><a class="home__link" href="nosotros.html">Sobre Nosotros</a></li>
+                <li class="home__menu-item"><a class="home__link" href="pedidos.html">Pedidos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="home__main">
+        <section class="home__bienvenida">
+            <h1 class="home__title">Bienvenidos a Galletas Anna</h1>
+            <p class="home__description">¡Disfruta nuestras galletas rellenas, bebidas y delicias hechas con mucho amor! ❤️</p>
+        </section>
+
+        <section class="home__imagen-principal">
+            <img class="home__img" src="https://i.pinimg.com/736x/e0/31/25/e03125d1a33d3b215d003722885c8c6f.jpg" alt="Cookies deliciosas">
+        </section>
+
+        <section class="home__destacados">
+            <h2 class="home__subtitle">Lo más vendido </h2>
+            <div class="home__productos">
+                <div class="home__producto">
+                    <img class="home__producto-img" src="https://i.pinimg.com/736x/be/17/1c/be171cc984479e691cfcbde8948e9371.jpg" alt="Galleta">
+                    <p class="home__producto-name">Galleta rellena</p>
+                </div>
+                <div class="home__producto">
+                    <img class="home__producto-img" src="https://i.pinimg.com/236x/a0/b2/b7/a0b2b7a9da93093cba66423fb397c938.jpg" alt="Frappe">
+                    <p class="home__producto-name">Frappe de vainilla</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="home__footer">
+        <p class="home__copyright">&copy; 2025 Galletas Anna - Todos los derechos reservados.</p>
+</footer>
+
+<script>
+  window.onload = function () {
+    const navigationType = performance.getEntriesByType("navigation")[0].type;
+
+    if (navigationType === "reload") {
+      document.getElementById("alertaModal").style.display = "block";
+    }
+  };
+
+  function cerrarAlerta() {
+    document.getElementById("alertaModal").style.display = "none";
+  }
+</script>
+
+</body>
+</html>
